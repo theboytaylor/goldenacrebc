@@ -1,5 +1,5 @@
 # goldenacrebc
-# 🎳 Goldenacre Bowling Club Website
+# Goldenacre Bowling Club Website
 
 A friendly, modern website for the **Goldenacre Bowling Club**, located in the heart of Warriston, Edinburgh. This repository serves as the codebase for the club's public schedule, history, news announcements, and contact portal.
 
