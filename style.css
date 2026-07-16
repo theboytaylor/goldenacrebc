@@ -61,11 +61,19 @@ nav a:hover {
 
 .hero-logo-wrapper {
     margin-bottom: 10px; /* Tightened space beneath the logo */
+    /* ADJUST LOGO SIZE HERE - Controls max width of logo container on desktop */
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* HERO LOGO - MAIN SIZE CONTROL */
 .prominent-logo {
-    height: 90px; /* Shrunk logo height from 180px to 90px */
+    /* CHANGE THIS VALUE TO RESIZE THE LOGO */
+    /* Desktop: 90px works well, try 70px for smaller or 110px for larger */
+    height: 90px;
     width: auto;
+    display: block;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)); /* Makes the round logo pop off the blue gradient */
 }
 
@@ -319,17 +327,6 @@ footer {
     max-width: 100%;
     height: auto;
 }
-.hero-logo-wrapper {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto 20px;
-}
-
-.prominent-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* Mobile Responsiveness styling */
 @media (max-width: 650px) {
@@ -344,8 +341,10 @@ footer {
     .hero h1 {
         font-size: 1.6rem; /* Scaled down slightly more for compact mobile viewing */
     }
+    /* MOBILE LOGO SIZE - Change this value for mobile display */
+    /* Current: 70px, try 60px for smaller or 80px for larger on mobile */
     .prominent-logo {
-        height: 70px; /* Adjusted down for clean mobile presentation */
+        height: 70px;
     }
     .schedule-table th, .schedule-table td {
         padding: 12px;
