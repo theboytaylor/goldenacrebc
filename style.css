@@ -61,9 +61,9 @@ nav a:hover {
 
 .hero-logo-wrapper {
     margin-bottom: 10px; /* Tightened space beneath the logo */
-    max-width: 200px; /* Prevent stretching on mobile */
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* HERO LOGO - ADJUST SIZE HERE */
@@ -71,7 +71,8 @@ nav a:hover {
 /* Desktop suggestions: 70px (small), 85px (medium), 100px (large) */
 .prominent-logo {
     height: 85px;
-    width: auto;
+    width: 85px;
+    object-fit: contain;
     display: block;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)); /* Makes the round logo pop off the blue gradient */
 }
@@ -341,14 +342,11 @@ footer {
         font-size: 1.6rem; /* Scaled down slightly more for compact mobile viewing */
     }
     
-    .hero-logo-wrapper {
-        max-width: 100px; /* Smaller container for mobile */
-    }
-    
     /* MOBILE LOGO - Adjust size for mobile here */
     /* Mobile suggestions: 45px (small), 50px (medium), 55px (large) */
     .prominent-logo {
         height: 50px;
+        width: 50px;
     }
     
     .schedule-table th, .schedule-table td {
