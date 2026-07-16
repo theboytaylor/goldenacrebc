@@ -288,6 +288,49 @@ footer {
     border-top: 1px solid #222222;
 }
 
+/* Card and card2 images - responsive sizing */
+.card img,
+.card2 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Gallery images */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Content section images */
+.content-section img {
+    max-width: 100%;
+    height: auto;
+}
+.hero-logo-wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.prominent-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Mobile Responsiveness styling */
 @media (max-width: 650px) {
     header {
@@ -308,7 +351,16 @@ footer {
         padding: 12px;
         font-size: 0.9rem;
     }
-    /* Modal Backdrop Overlay */
+    
+    /* Card images on mobile - constrain height */
+    .card img,
+    .card2 img {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+/* Modal Backdrop Overlay */
 .modal {
     border: none;
     border-radius: 8px;
@@ -401,57 +453,4 @@ footer {
     cursor: pointer;
     padding: 12px;
     margin-top: 10px;
-}
-.card img,
-.card2 img {
-    max-width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-/* For hero and banner images */
-
-/* Only apply sizing to images in cards and galleries */
-.card img,
-.card2 img {
-    max-width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-/* Gallery images */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Content section images */
-.content-section img {
-    max-width: 100%;
-    height: auto;
-}
-.hero-logo-wrapper {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto 20px;
-}
-
-.prominent-logo {
-    width: 100%;
-    height: auto;
-    display: block;
 }
