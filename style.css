@@ -22,7 +22,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-top: 4px solid #ffcc00; /* Club Yellow/Gold accent border on top */
+    /* border-top: 4px solid #ffcc00; /* Club Yellow/Gold accent border on top */
     border-bottom: 4px solid #ffcc00; /* Club Yellow/Gold accent border on bottom */
 }
 
