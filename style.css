@@ -536,3 +536,18 @@ footer {
         object-fit: cover;
     }
 }
+
+/* Hover for the facebook link */
+
+/* Hide the image by default */
+.preview-hover .hover-image {
+  display: none;
+  position: absolute; /* Optional: keeps it from disrupting layout when appearing */
+  z-index: 10;        /* Optional: ensures it sits on top of other elements */
+}
+
+/* Show the image only when hovering over the link */
+.preview-hover:hover .hover-image {
+  display: block;
+}
+
