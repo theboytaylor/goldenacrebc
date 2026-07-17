@@ -1,4 +1,20 @@
-/* Reset and Base Styles */
+/* ============================================================================
+   GOLDEN ACRE BADMINTON CLUB - STYLESHEET
+   ============================================================================
+   
+   Color Scheme:
+   - Primary Black: #111111
+   - Accent Gold/Yellow: #ffcc00
+   - Sky Blue: #4ba3e3, #7ecaf6
+   - Light Gray: #f4f9fd, #eef2f5
+   - Text Gray: #aaaaaa, #333333
+   
+   ============================================================================ */
+
+/* ============================================================================
+   RESET & BASE STYLES
+   ============================================================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +24,15 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #111111; /* Off-black for modern readability */
+    color: #111111;
 }
 
-/* Header Navigation */
+/* ============================================================================
+   HEADER & NAVIGATION
+   ============================================================================ */
+
 header {
-    background: #111111; /* Deep charcoal black */
+    background: #111111;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -22,8 +41,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    /* border-top: 4px solid #ffcc00; /* Club Yellow/Gold accent border on top */
-    border-bottom: 4px solid #ffcc00; /* Club Yellow/Gold accent border on bottom */
+    border-bottom: 4px solid #ffcc00;
 }
 
 .logo-container {
@@ -32,12 +50,13 @@ header {
 }
 
 .logo-text {
-    font-size: 1.0rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
     letter-spacing: 0.2px;
 }
 
+/* Navigation links styling */
 nav a {
     color: #ffffff;
     text-decoration: none;
@@ -47,65 +66,65 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00; /* Yellow highlight on hover */
+    color: #ffcc00;
 }
 
-/* Hero Section (Updated to be smaller and compact) */
+/* ============================================================================
+   HERO SECTION
+   ============================================================================ */
+
 .hero {
-    /* Uses the club's sky blue color mixed into a clean vertical gradient background */
     background: linear-gradient(135deg, #7ecaf6 0%, #4ba3e3 100%);
     color: #111111;
     text-align: center;
-    padding: 20px 20px; /* Reduced vertical padding slightly so a larger logo doesn't stretch the banner */
-    border-bottom: 5px solid #ffcc00; /* Club yellow line beneath the hero/blue section */
+    padding: 20px 20px;
+    border-bottom: 5px solid #ffcc00;
 }
 
 .hero-logo-wrapper {
-    margin-bottom: 8px; /* Slightly tightened space beneath the logo */
+    margin-bottom: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* HERO LOGO - ADJUST SIZE HERE */
-/* Change the height value below to resize the logo for DESKTOP VIEW */
-/* Desktop suggestions: 80px (small), 95px (medium), 110px (large) */
-/* Current size: 95px (medium) */
+/* Hero logo - sizing controlled by media queries */
 .prominent-logo {
-    height: 95px;       /* Desktop logo height - increase/decrease to make bigger/smaller */
-    max-width: 95px;    /* keep it constrained so it doesn't overflow */
-    width: auto;        /* preserve aspect ratio */
+    width: auto;
     object-fit: contain;
     display: block;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)); /* Makes the round logo pop off the blue gradient */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .hero h1 {
-    font-size: 1.8rem; /* Shrunk title font size from 3rem to 1.8rem */
-    margin-bottom: 5px; /* Minimal gap between title and description */
+    font-size: 1.8rem;
+    margin-bottom: 5px;
     color: #111111;
-    text-shadow: 0 1px 2px rgba(255,255,255,0.4);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
 }
 
 .hero p {
-    font-size: 1rem; /* Shrunk description font size from 1.3rem to 1rem */
-    margin-bottom: 15px; /* Tighter gap before the button */
-    max-width: 500px; /* Prevents text lines from getting too wide */
+    font-size: 1rem;
+    margin-bottom: 15px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Modern Button (Updated to match smaller hero proportions) */
+/* ============================================================================
+   BUTTONS
+   ============================================================================ */
+
 .btn {
     display: inline-block;
-    background: #111111; /* Black button */
-    color: #ffcc00; /* Yellow text to snap outward */
-    padding: 8px 18px; /* Tighter padding for a smaller profile */
+    background: #111111;
+    color: #ffcc00;
+    padding: 8px 18px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 0.9rem; /* Slightly smaller button text */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
@@ -114,14 +133,25 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Content Layouts */
+.submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+/* ============================================================================
+   CONTENT SECTIONS
+   ============================================================================ */
+
 .content-section {
     padding: 70px 10%;
     text-align: center;
 }
 
 .gray-bg {
-    background: #f4f9fd; /* Light tinted blue background for section separation */
+    background: #f4f9fd;
 }
 
 .content-section h2 {
@@ -131,7 +161,7 @@ nav a:hover {
     position: relative;
 }
 
-/* Small underline accent below section headers */
+/* Decorative underline beneath section headers */
 .content-section h2::after {
     content: '';
     display: block;
@@ -141,108 +171,151 @@ nav a:hover {
     margin: 10px auto 0 auto;
     border-radius: 2px;
 }
+
+.content-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================================
+   GRID & CARDS
+   ============================================================================ */
+
 .grid {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 40px 20px 20px 20px; /* Adds 40px of top breathing room under the hero banner */
+    padding: 40px 20px 20px 20px;
 }
 
-
+/* Standard card styling - blue top, gold bottom */
 .card {
     background: white;
     padding: 35px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     flex: 1;
     min-width: 290px;
     max-width: 460px;
-    border-top: 4px solid #4ba3e3; /* Sky blue top border border accent */
-    border-bottom: 4px solid #ffcc00; /* Gold bottom border accent */
+    border-top: 4px solid #4ba3e3;
+    border-bottom: 4px solid #ffcc00;
 }
-.card2{
+
+/* Alternate card styling - gold top, blue bottom */
+.card2 {
     background: white;
     padding: 35px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     flex: 1;
     min-width: 290px;
     max-width: 460px;
-    border-top: 4px solid #ffcc00; /* Gold */ 
-    border-bottom: 4px solid #4ba3e3; /* Gold bottom border accent */
-
+    border-top: 4px solid #ffcc00;
+    border-bottom: 4px solid #4ba3e3;
 }
-/* Premium Styling for the Congratulations Announcement Card */
+
+/* Premium announcement card styling */
 .card2.announcement-card {
-    background: #ffffff;
+    background: linear-gradient(to bottom, #ffffff, #fffdf2);
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Deeper shadow to draw attention */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     flex: 1;
     min-width: 290px;
-    max-width: 600px; /* Slightly wider layout box for a major headline */
-    border: 2px solid #ffcc00; /* Fully framed in club gold */
-    background: linear-gradient(to bottom, #ffffff, #fffdf2); /* Soft warm gold tint background */
-    text-align: center; /* Natively centers all text elements inside cleanly */
+    max-width: 600px;
+    border: 2px solid #ffcc00;
+    text-align: center;
 }
 
-/* Makes the heading typography stand out proudly */
+/* Announcement card main heading */
 .card2.announcement-card h3 {
     color: #111111;
-    font-size: 1.8rem; /* Larger font size */
+    font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 0.5px;
     margin-bottom: 12px;
     text-transform: uppercase;
 }
-.card2.announcement-card h2{
+
+/* Announcement card secondary heading */
+.card2.announcement-card h2 {
     color: #111111;
-    font-size: 10px; /* medium font size */
+    font-size: 10px;
     font-weight: 800;
     letter-spacing: 0.5px;
     margin-bottom: 12px;
     text-transform: uppercase;
 }
-/* Enhances the body text visibility */
+
+/* Announcement card paragraph text */
 .card2.announcement-card p {
     color: #333333;
-    font-size: 1.15rem; /* Larger text for high readability */
+    font-size: 1.15rem;
     line-height: 1.5;
     font-weight: 500;
 }
-.card h3 {
-    margin-bottom: 15px;
-    color: #111111;
-    font-size: 1.4rem;
-}
+
+/* Card headings */
+.card h3,
 .card h2 {
     margin-bottom: 15px;
     color: #111111;
     font-size: 1.4rem;
 }
 
-/* Modernized Tables */
+/* Card images */
+.card img,
+.card2 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* ============================================================================
+   GALLERY
+   ============================================================================ */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================================
+   TABLES
+   ============================================================================ */
+
 .schedule-table {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
     border-collapse: collapse;
     background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     overflow: hidden;
 }
 
-.schedule-table th, .schedule-table td {
-    padding: 18px;
+.schedule-table th,
+.schedule-table td {
     text-align: left;
-    font-size: 13px;
 }
 
 .schedule-table th {
     background-color: #111111;
-    color: #ffcc00; /* Gold text headers */
+    color: #ffcc00;
     font-weight: 600;
 }
 
@@ -250,7 +323,10 @@ nav a:hover {
     border-bottom: 1px solid #eef2f5;
 }
 
-/* Contact & Map Layout */
+/* ============================================================================
+   CONTACT & MAP
+   ============================================================================ */
+
 .contact-container {
     max-width: 800px;
     margin: 30px auto 0 auto;
@@ -281,7 +357,7 @@ nav a:hover {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border: 2px solid #eef2f5;
 }
 
@@ -289,7 +365,10 @@ nav a:hover {
     display: block;
 }
 
-/* Footer */
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
 footer {
     background: #111111;
     color: #aaaaaa;
@@ -299,77 +378,10 @@ footer {
     border-top: 1px solid #222222;
 }
 
-/* Card and card2 images - responsive sizing */
-.card img,
-.card2 img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
+/* ============================================================================
+   MODAL & FORM STYLES
+   ============================================================================ */
 
-/* Gallery images */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Content section images */
-.content-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Mobile Responsiveness styling */
-@media (max-width: 650px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 5%;
-    }
-    nav a {
-        margin: 0 10px;
-        font-size: 0.85rem; /* Smaller font size for mobile navigation links */
-    }
-    .hero h1 {
-        font-size: 1.6rem; /* Scaled down slightly more for compact mobile viewing */
-    }
-    
-    /* MOBILE LOGO - Adjust size for mobile view here */
-    /* Mobile suggestions: 45px (small), 55px (medium), 65px (large) */
-    /* Current size: 65px (larger than before for better mobile visibility) */
-    /* IMPORTANT: Change the "height" and "max-width" values below to make it bigger or smaller on phones */
-    .prominent-logo {
-        height: 85px;      /* Mobile logo height - increase/decrease to make bigger/smaller on phones */
-        max-width: 85px;   /* Must match the height value above */
-        width: auto;
-    }
-    
-    .schedule-table th, .schedule-table td {
-        padding: 12px;
-        font-size: 0.9rem;
-    }
-    
-    /* Card images on mobile - constrain height */
-    .card img,
-    .card2 img {
-        height: 250px;
-        object-fit: cover;
-    }
-}
-
-/* Modal Backdrop Overlay */
 .modal {
     border: none;
     border-radius: 8px;
@@ -380,11 +392,10 @@ footer {
 }
 
 .modal::backdrop {
-    background: rgba(17, 17, 17, 0.7); /* Deep charcoal overlay with blur effect */
+    background: rgba(17, 17, 17, 0.7);
     backdrop-filter: blur(4px);
 }
 
-/* Modal Box Box Design */
 .modal-content {
     background: #ffffff;
     padding: 30px;
@@ -398,7 +409,7 @@ footer {
     text-align: center;
 }
 
-/* Matching the club underline theme decoration */
+/* Decorative underline in modal */
 .modal-underline {
     width: 50px;
     height: 4px;
@@ -407,7 +418,7 @@ footer {
     border-radius: 2px;
 }
 
-/* Close Button Icon */
+/* Close button styling */
 .close-btn {
     position: absolute;
     top: 15px;
@@ -424,7 +435,7 @@ footer {
     color: #111111;
 }
 
-/* Form Layout Elements */
+/* Form styling */
 .form-group {
     margin-bottom: 18px;
     text-align: left;
@@ -438,7 +449,7 @@ footer {
     color: #111111;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     width: 100%;
     padding: 10px 12px;
@@ -449,17 +460,79 @@ footer {
     transition: border-color 0.2s;
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #4ba3e3; /* Accent blue focus frame */
+    border-color: #4ba3e3;
 }
 
-/* Center Form Action Button */
-.submit-btn {
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    padding: 12px;
-    margin-top: 10px;
+/* ============================================================================
+   DESKTOP STYLES (651px and above)
+   ============================================================================ */
+
+@media (min-width: 651px) {
+    /* Desktop logo sizing - 95px medium size */
+    .prominent-logo {
+        height: 95px;
+        max-width: 95px;
+    }
+
+    /* Desktop table cell spacing */
+    .schedule-table th,
+    .schedule-table td {
+        padding: 18px;
+        font-size: 13px;
+    }
+
+    /* Desktop card image sizing - automatic height */
+    .card img,
+    .card2 img {
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* ============================================================================
+   MOBILE STYLES (650px and below)
+   ============================================================================ */
+
+@media (max-width: 650px) {
+    /* Mobile header - stack vertically */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    /* Mobile navigation links - smaller font */
+    nav a {
+        margin: 0 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Mobile hero heading - scaled down */
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Mobile logo sizing - 85px smaller than desktop */
+    .prominent-logo {
+        height: 85px;
+        max-width: 85px;
+        width: auto;
+    }
+
+    /* Mobile table cell spacing - more compact */
+    .schedule-table th,
+    .schedule-table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Mobile card image sizing - fixed height */
+    .card img,
+    .card2 img {
+        height: 250px;
+        object-fit: cover;
+    }
 }
