@@ -67,10 +67,11 @@ nav a:hover {
 }
 
 /* HERO LOGO - ADJUST SIZE HERE */
-/* Change the height value below to resize the logo */
+/* Change the height value below to resize the logo for DESKTOP VIEW */
 /* Desktop suggestions: 80px (small), 95px (medium), 110px (large) */
+/* Current size: 95px (medium) */
 .prominent-logo {
-    height: 95px;       /* Increased from 85px to 95px */
+    height: 95px;       /* Desktop logo height - increase/decrease to make bigger/smaller */
     max-width: 95px;    /* keep it constrained so it doesn't overflow */
     width: auto;        /* preserve aspect ratio */
     object-fit: contain;
@@ -343,11 +344,13 @@ footer {
         font-size: 1.6rem; /* Scaled down slightly more for compact mobile viewing */
     }
     
-    /* MOBILE LOGO - Adjust size for mobile here */
+    /* MOBILE LOGO - Adjust size for mobile view here */
     /* Mobile suggestions: 45px (small), 55px (medium), 65px (large) */
+    /* Current size: 65px (larger than before for better mobile visibility) */
+    /* IMPORTANT: Change the "height" and "max-width" values below to make it bigger or smaller on phones */
     .prominent-logo {
-        height: 58px;  /* Increased slightly from 50px to 58px for better visibility on phones */
-        max-width: 58px;
+        height: 65px;      /* Mobile logo height - increase/decrease to make bigger/smaller on phones */
+        max-width: 65px;   /* Must match the height value above */
         width: auto;
     }
     
