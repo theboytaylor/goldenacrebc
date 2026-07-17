@@ -350,8 +350,8 @@ footer {
     /* Current size: 65px (larger than before for better mobile visibility) */
     /* IMPORTANT: Change the "height" and "max-width" values below to make it bigger or smaller on phones */
     .prominent-logo {
-        height: 65px;      /* Mobile logo height - increase/decrease to make bigger/smaller on phones */
-        max-width: 65px;   /* Must match the height value above */
+        height: 85px;      /* Mobile logo height - increase/decrease to make bigger/smaller on phones */
+        max-width: 85px;   /* Must match the height value above */
         width: auto;
     }
     
