@@ -539,15 +539,29 @@ footer {
 
 /* Hover for the facebook link */
 
-/* Hide the image by default */
-.preview-hover .hover-image {
-  display: none;
-  position: absolute; /* Optional: keeps it from disrupting layout when appearing */
-  z-index: 10;        /* Optional: ensures it sits on top of other elements */
+/* Container link needs relative positioning for the absolute image alignment */
+.preview-hover {
+  position: relative;
+  display: inline-block;
 }
 
-/* Show the image only when hovering over the link */
+/* Hide and scale down the image by default */
+.preview-hover .hover-image {
+  display: none;
+  position: absolute;
+  left: 105%;          /* Positions the image to the right of the link text */
+  top: 50%;
+  transform: translateY(-50%); /* Centers the image vertically against the text */
+  width: 150px;        /* Forces a smaller, readable width */
+  height: auto;        /* Maintains the original aspect ratio */
+  z-index: 10;
+  border: 1px solid #ccc; /* Optional: adds a clean frame */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds depth */
+}
+
+/* Show the image on hover */
 .preview-hover:hover .hover-image {
   display: block;
 }
+
 
