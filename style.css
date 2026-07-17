@@ -55,12 +55,12 @@ nav a:hover {
     background: linear-gradient(135deg, #7ecaf6 0%, #4ba3e3 100%);
     color: #111111;
     text-align: center;
-    padding: 30px 20px; /* Reduced vertical padding for a shorter banner */
+    padding: 20px 20px; /* Reduced vertical padding slightly so a larger logo doesn't stretch the banner */
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .hero-logo-wrapper {
-    margin-bottom: 10px; /* Tightened space beneath the logo */
+    margin-bottom: 8px; /* Slightly tightened space beneath the logo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,10 +68,11 @@ nav a:hover {
 
 /* HERO LOGO - ADJUST SIZE HERE */
 /* Change the height value below to resize the logo */
-/* Desktop suggestions: 70px (small), 85px (medium), 100px (large) */
+/* Desktop suggestions: 80px (small), 95px (medium), 110px (large) */
 .prominent-logo {
-    height: 85px;
-    width: 85px;
+    height: 95px;       /* Increased from 85px to 95px */
+    max-width: 95px;    /* keep it constrained so it doesn't overflow */
+    width: auto;        /* preserve aspect ratio */
     object-fit: contain;
     display: block;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15)); /* Makes the round logo pop off the blue gradient */
@@ -343,10 +344,11 @@ footer {
     }
     
     /* MOBILE LOGO - Adjust size for mobile here */
-    /* Mobile suggestions: 45px (small), 50px (medium), 55px (large) */
+    /* Mobile suggestions: 45px (small), 55px (medium), 65px (large) */
     .prominent-logo {
-        height: 50px;
-        width: 50px;
+        height: 58px;  /* Increased slightly from 50px to 58px for better visibility on phones */
+        max-width: 58px;
+        width: auto;
     }
     
     .schedule-table th, .schedule-table td {
