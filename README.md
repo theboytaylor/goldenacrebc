@@ -21,7 +21,7 @@ A friendly, modern website for the **Goldenacre Bowling Club**, located in the h
 ## ✨ Features
 
 - **Responsive Landing Page:** Fully accessible on mobile, tablet, and desktop devices.
-- **Club Information & History:** Showcases the rich history of the club dating back to 1920.
+- **Club Information & History:** Showcases the rich history of the club dating back to 1942.
 - **Weekly Schedule Tracker:** Clear, organized tables detailing Seniors Leagues, League Nights, Friday Night Rollups, and Saturday Morning Hats.
 - **Live Event Notices:** Highlights upcoming local club events like the Annual BBQ and the Invitation Pairs Tournament.
 - **Contact & Enquiries Portal:** Easy access for user communication regarding membership, general queries, and hall hire.
