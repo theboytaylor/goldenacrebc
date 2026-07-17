@@ -552,12 +552,19 @@ footer {
   left: 105%;          /* Positions the image to the right of the link text */
   top: 50%;
   transform: translateY(-50%); /* Centers the image vertically against the text */
-  width: 150px;        /* Forces a smaller, readable width */
+  width: 300px;        /* Increased size for better readability */
   height: auto;        /* Maintains the original aspect ratio */
   z-index: 10;
-  border: 1px solid #ccc; /* Optional: adds a clean frame */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds depth */
+  border: 1px solid #ddd; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  border-radius: 4px;  /* Optional: rounds the corners slightly */
 }
+
+/* Show the image on hover */
+.preview-hover:hover .hover-image {
+  display: block;
+}
+
 
 /* Show the image on hover */
 .preview-hover:hover .hover-image {
