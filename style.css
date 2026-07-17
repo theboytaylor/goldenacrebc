@@ -57,7 +57,7 @@ nav a:hover {
     color: #111111;
     text-align: center;
     padding: 20px 20px; /* Reduced vertical padding slightly so a larger logo doesn't stretch the banner */
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 5px solid #ffcc00; /* Club yellow line beneath the hero/blue section */
 }
 
 .hero-logo-wrapper {
@@ -340,6 +340,7 @@ footer {
     }
     nav a {
         margin: 0 10px;
+        font-size: 0.85rem; /* Smaller font size for mobile navigation links */
     }
     .hero h1 {
         font-size: 1.6rem; /* Scaled down slightly more for compact mobile viewing */
