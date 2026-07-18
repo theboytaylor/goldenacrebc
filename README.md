@@ -39,12 +39,13 @@ A friendly, modern website for the **Goldenacre Bowling Club**, located in the h
 ## 📂 Project Structure
 
 ```text
-├── index.html          # Main homepage and core club content
+├── index.html                   # Main homepage and core club content
 ├── css/
-│   └── styles.css      # Custom styling, variables, and media queries
+│   └── styles.css               # Custom styling, variables, and media queries
 ├── images/
-│   └── logo.png        # Goldenacre Bowling Club official brand asset
-└── README.md           # Project documentation
+│   └── logo.png                 # Goldenacre Bowling Club official brand asset
+|   └── facebook_preview.png     # Screenshot of Goldenacre Facbook page for facebook link hover
+└── README.md                    # Project documentation
 ```
 
 ---
@@ -97,6 +98,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 ## 📞 Club Contact Information
-* **Address:** 36a Warriston Gardens, Edinburgh, EH3 5NE
-* **Phone:** 0131 552 4206
-* **Facebook:** [Goldenacre Facebook Page](https://theboytaylor.github.io/goldenacrebc/)
+* **Address:**
+* **Email:**
+* **Phone:** 
+* **Facebook:** 
