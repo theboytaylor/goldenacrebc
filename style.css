@@ -571,4 +571,45 @@ footer {
   display: block;
 }
 
+/* Base setup for the link container */
+  .preview-hover {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Default settings for Desktop / Large Screens */
+  .preview-hover .hover-image {
+    /* Hidden state configured for smooth transitions */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    position: absolute;
+    left: 105%;                  /* Position to the right of text */
+    top: 50%;
+    transform: translateY(-50%); /* Centered vertically */
+    width: 300px;                /* Fixed crisp width for desktop */
+    height: auto;
+    z-index: 10;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* Reveal image on hover with a smooth fade-in */
+  .preview-hover:hover .hover-image {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Mobile / Small Screen Overrides (Screens under 768px wide) */
+  @media (max-width: 768px) {
+    .preview-hover .hover-image {
+      left: 0;                   /* Align with the left edge of the link text */
+      top: 120%;                 /* Push down directly below the link text */
+      transform: none;           /* Remove desktop vertical centering */
+      width: 90vw;               /* Take up 90% of the screen width */
+      max-width: 320px;          /* Prevent it from getting overly massive on small tablets */
+    }
+  }
 
