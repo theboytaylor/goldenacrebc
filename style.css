@@ -549,7 +549,7 @@ footer {
 .preview-hover .hover-image {
   display: none;
   position: absolute;
-  left: 105%;          /* Positions the image to the right of the link text */
+  left: 50%;          /* Positions the image to the right of the link text */
   top: 50%;
   transform: translateY(-50%); /* Centers the image vertically against the text */
   width: 300px;        /* Increased size for better readability */
